@@ -48,18 +48,14 @@ public class People implements Iterable {
 
     @Override
     public Iterator iterator() {
-       /* Iterator<Person> person = new Iterator<>(personList) {
-            @Override
-            public boolean hasNext() {
-                return false;
-            }
+        return personList.iterator();
 
-            @Override
-            public Person next() {
-                return null;
-            }
-
-*/
-        return null;
         }
+
+    @Override
+    public String toString() {
+        return "People{" +
+                "personList=" + personList +
+                '}';
+    }
 }

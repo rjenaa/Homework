@@ -15,4 +15,9 @@ public class Student extends Person implements ILearner{
     public double getTotalStudyTime() {
         return totalStudyTime;
     }
+
+    @Override
+    public String toString() {
+        return "Student";
+    }
 }

@@ -1,5 +1,6 @@
 public class Instructor extends Person implements ITeacher{
 
+\
     public Instructor(long id, String name) {
         super(id, name);
     }
@@ -15,5 +16,10 @@ public class Instructor extends Person implements ITeacher{
         for(ILearner learner1: learner){
             learner1.learn(numberOfHoursPerStudent);
         }
+    }
+
+    @Override
+    public String toString() {
+        return "Instructor{" + getName();
     }
 }
